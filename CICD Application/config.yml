@@ -4,7 +4,6 @@
 # Stacks detected: cicd:github-actions:.github/workflows
 version: 2.1
 jobs:
-  test:
     docker:
       - image: cimg/base:stable
     steps:
@@ -26,6 +25,5 @@ jobs:
 workflows:
   example:
     jobs:
-      - test
       - build:
     
